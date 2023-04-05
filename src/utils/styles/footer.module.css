@@ -1,0 +1,32 @@
+.footer {
+    position: relative;
+    /* width: 1440px; */
+    height: 209px;
+    background: #000000;
+    font-family: 'Montserrat';
+}
+
+.copyright {
+    position: absolute;
+    left: 32.15%;
+    right: 32.22%;
+    top: 64.11%;
+    bottom: 13.88%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.logo {
+    position: absolute;
+    left: 33.87%;
+    right: 33.6%;
+    top: 29.67%;
+    bottom: 51.46%;
+}
