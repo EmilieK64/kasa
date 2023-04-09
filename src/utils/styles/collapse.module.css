@@ -29,8 +29,7 @@
     background: #FF6060;
     border-radius: 5px;
     width: 96%;
-    height: 53px;
-    border-radius: 5px;
+    height: 47px;
     justify-content:flex-start;
     align-items: center;
     color: #FFFFFF;
@@ -38,6 +37,7 @@
     font-size: 24px;
     line-height: 142.6%;
     margin-bottom:4px;
+    border:0;
 }
 .button_aboutPage:hover {
     cursor: pointer;
@@ -46,10 +46,9 @@
     display:flex;
     position: relative;
     background: #FF6060;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 96%;
-    height: 53px;
-    border-radius: 5px;
+    height: 52px;
     justify-content:flex-start;
     align-items: center;
     color: #FFFFFF;
@@ -57,6 +56,7 @@
     font-size: 18px;
     line-height: 142.6%;
     margin-bottom:4px;
+    border:0;
 }
 .button_logement:hover {
     cursor: pointer;
@@ -98,7 +98,6 @@
     font-weight: 400;
     font-size: 24px;
     width: 95%;
-    /* text-align: justify; */
     padding-left:20px;
     margin-bottom: 5px;
     margin-top: 15px;
@@ -107,21 +106,18 @@
 .paragraphBox_logement {
     color:#FF6060;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     width: 88%;
-    text-align: justify;
-    padding-left:20px;
     margin-bottom: 5px;
     margin-top: 15px;
     line-height: 142.6%;
+    width:90%;
 }
 
-.label_aboutPage {
-
-}
-
-.label_logement {
-
+@media screen and (max-width: 1500px) {
+    .chevron_logement {
+        left: 90%;
+    }
 }
 
 @media screen and (max-width: 1163px) {
@@ -137,11 +133,17 @@
 }
 
 @media screen and (max-width: 663px) {
+    .collapseBox_logement {
+        padding-bottom:20px;
+    }
     .button_aboutPage {
         font-size: 13px;
         height:30px;
         margin-bottom:0px;
-
+    }
+    .button_logement {
+        font-size: 13px;
+        height:30px;
     }
     .chevron_aboutPage {
         left: 90%;

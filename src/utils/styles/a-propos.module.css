@@ -24,7 +24,7 @@
     .collapseSection {
         margin-bottom: 31px;
     }
-}
+} 
 
 @media screen and (max-width: 663px) {
     .collapseSection {
@@ -32,7 +32,7 @@
         margin-top:20px;
         width:100%;
     }
-}
+} 
 
 @media screen and (max-width: 450px) {
     .collapseSection {

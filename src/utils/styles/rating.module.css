@@ -13,3 +13,8 @@
         width:13.41px;
     }
 }
+@media screen and (max-width: 663px) {
+    .rating {
+        padding:3px;
+    }
+}

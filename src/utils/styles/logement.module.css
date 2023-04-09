@@ -4,7 +4,6 @@
     width: 93%;
     flex-wrap: wrap;
     overflow-x:hidden;
-    /* justify-content: center; */
     align-items:center;
     margin:0 auto;
     font-family: 'Montserrat';
@@ -35,7 +34,7 @@
     line-height: 25.67px;
     margin-bottom: 0px;
     font-weight: 500;
-    line-height: 51px;
+    line-height: 142.6%;
 }
 
 .appartLocation {
@@ -66,11 +65,13 @@
     color: #FFFFFF;
     background: #FF6060;
     border-radius: 10px;
-    width: 25%;
     justify-content:center;
     align-items:flex-end;
-    height: 27px;
     padding-bottom: 5px;
+    padding-right:5px;
+    padding-left:5px;
+    min-height:25px;
+    min-width:115px;
 }
 
 .infoPart2 {
@@ -120,34 +121,32 @@
 
  .collapseContainer {
     display: flex;
-    flex-direction: row;
 }
-
 .collapseComments {
-    display:flex;
     list-style-type: none;
-    padding:0; 
-    flex-direction: column;
-    font-size:18px;
+    padding-left:20px;
+    padding-right:10px;
+    width:100%;
+    margin-top:2px;
 }
 
-@media screen and (max-width: 1000px) {
-    .sticker {
-        height:40px;
-        align-items:center;
-        text-align:center;
-    }
-}
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 993px) {
     .appartTitle {
         font-size: 25px;
     }
     .appartLocation {
         font-size: 18px;
     }
+    .appartStickers {
+        flex-wrap: wrap;
+    }
     .sticker {
-        height:18px;
+        min-height:18px;
         font-size:13px;
+        padding-top:2px;
+        padding-bottom:2px; 
+        
     }
     .infoBox {
         flex-direction: column;
@@ -182,20 +181,22 @@
         width: 50px;
         height: 50px;
     } 
-    .collapseContainer {
-        height:111px;
-    }
+    
     .collapseContainer {
         flex-direction: column;
     }
 } 
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 663px) {
+    .appartTitle {
+        margin-top:0px;
+    }
     .sticker {
-        height:35px;
+        margin-top:0px;
+        border-radius:5px;
     }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 450px) {
     .appartTitle {
         font-size: 18px;
     }
@@ -204,6 +205,8 @@
     }
     .sticker {
         font-size:10px;
+        min-height:14px;
+        min-width:15px;
     }
     .hostName {
         font-size: 12px;
@@ -212,6 +215,4 @@
         width: 32px;
         height: 32px;
     }
-    
-
 }

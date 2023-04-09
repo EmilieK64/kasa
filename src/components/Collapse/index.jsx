@@ -37,7 +37,7 @@ function Collapse(props) {
                     <p className={style.Label_logement}>{props.label}</p>
                     <img className={style.chevron_logement} src={chevronHaut} alt="chevron-haut"/>
                     </button> 
-                    <div className={style.aragraphBoxOpened_logement}>
+                    <div className={style.paragraphBoxOpened_logement}>
                         <div className={style.paragraphBox_logement}>
                             {props.children}
                         </div>

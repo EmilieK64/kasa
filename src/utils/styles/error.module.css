@@ -14,9 +14,9 @@
 
 .errorNumber {
     font-weight: 700;
+    font-style:bold;
     font-size: 288px;
     line-height: 142.6%;
-    /* or 411px */
     display: flex;
     text-align: center;
     align-items: center;
