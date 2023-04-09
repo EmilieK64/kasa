@@ -1,0 +1,15 @@
+.ratingBox {
+    display:flex;
+}
+.rating {
+    padding:6px;
+    width: 24.75px;
+    height: 24px;
+}
+
+@media screen and (max-width: 663px) {
+    .rating {
+        height: 13px;
+        width:13.41px;
+    }
+}

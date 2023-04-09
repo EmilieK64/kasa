@@ -1,0 +1,177 @@
+.collapseBox_aboutPage {
+    display:flex;
+    overflow:hidden;
+    margin:auto;
+    width: 103%;
+    flex-direction: column;
+    padding-bottom: 28px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    justify-content: center;
+}
+
+.collapseBox_logement {
+    display:flex;
+    overflow:hidden;
+    margin: auto;
+    margin-top: 0;
+    width: 103%;
+    flex-direction: column;
+    padding-bottom: 28px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    justify-content: center;
+}
+
+.button_aboutPage {
+    display:flex;
+    position: relative;
+    background: #FF6060;
+    border-radius: 5px;
+    width: 96%;
+    height: 53px;
+    border-radius: 5px;
+    justify-content:flex-start;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    margin-bottom:4px;
+}
+.button_aboutPage:hover {
+    cursor: pointer;
+}
+.button_logement {
+    display:flex;
+    position: relative;
+    background: #FF6060;
+    border-radius: 5px;
+    width: 96%;
+    height: 53px;
+    border-radius: 5px;
+    justify-content:flex-start;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    margin-bottom:4px;
+}
+.button_logement:hover {
+    cursor: pointer;
+}
+.chevron_aboutPage {
+    position : absolute;
+    left: 95%;
+    bottom: 32%;
+    color: #FFFFFF;
+    height: 13.71px;
+    width: 24px;
+}
+.chevron_logement {
+    position : absolute;
+    left: 95%;
+    bottom: 32%;
+    color: #FFFFFF;
+    height: 13.71px;
+    width: 24px;
+}
+.paragraphBoxOpened_aboutPage {
+    display : flex;
+    background: #F7F7F7;
+    border-radius: 5px; 
+    width: 96%;
+    overflow:hidden;
+    flex-wrap:wrap;  
+}
+.paragraphBoxOpened_logement {
+    display : flex;
+    background: #F7F7F7;
+    border-radius: 5px; 
+    width: 96%;
+    overflow:hidden;
+    flex-wrap:wrap;  
+}
+.paragraphBox_aboutPage {
+    color:#FF6060;
+    font-weight: 400;
+    font-size: 24px;
+    width: 95%;
+    /* text-align: justify; */
+    padding-left:20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    line-height: 142.6%;
+}
+.paragraphBox_logement {
+    color:#FF6060;
+    font-weight: 400;
+    font-size: 24px;
+    width: 88%;
+    text-align: justify;
+    padding-left:20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    line-height: 142.6%;
+}
+
+.label_aboutPage {
+
+}
+
+.label_logement {
+
+}
+
+@media screen and (max-width: 1163px) {
+    .chevron_aboutPage {
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .chevron_logement {
+        left: 89%;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    .button_aboutPage {
+        font-size: 13px;
+        height:30px;
+        margin-bottom:0px;
+
+    }
+    .chevron_aboutPage {
+        left: 90%;
+        height: 9.14px;
+        width: 16px;
+    }
+    .chevron_logement {
+        left: 90%;
+        height: 9.14px;
+        width: 16px;
+    }
+    .paragraphBox_aboutPage {
+        font-size: 13px;
+    }
+    .paragraphBox_logement {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .paragraphBox_aboutPage {
+        margin-right: 20px; 
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .chevron_aboutPage {
+        left: 80%;
+    }
+    .chevron_logement {
+        left: 80%;
+    }
+}

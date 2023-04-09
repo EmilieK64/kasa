@@ -1,13 +1,14 @@
-.center {
+.homeContainer {
     box-sizing : border-box;
     display: flex;
-    /* flex-direction: column; */
-    margin: 0 auto;    
-    width:87%;
+    width: 93%;
     flex-wrap: wrap;
     overflow-x:hidden;
-    
+    justify-content: center;
+    align-items:center;
+    margin:0 auto;
 }
+
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -15,13 +16,25 @@
     padding:40px;
     border-radius: 25px; 
     width:100%;
-    /* margin: 0 auto;  */
     justify-content: space-around;
     cursor: pointer;
     overflow: hidden;
-    /* transition : box-shadow 0.2s ease-in-out;  */
-    
+    margin-top:30px;
+    margin-bottom: 30px;
 }
-/* .section:hover {
-        box-shadow: 0 2px 8px rgb(0, 0, 0);  
-} */
+
+
+@media screen and (max-width: 752px) {
+    .section {
+        background: #FFFFFF;
+        margin:0;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+ @media screen and (max-width: 450px) {
+    .section {
+        padding-top:20px;
+        
+    }
+} 

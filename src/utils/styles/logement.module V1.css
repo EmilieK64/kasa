@@ -1,10 +1,10 @@
 .logementContainer {
     box-sizing : border-box;
     display: flex;
-    width: 93%;
+    width: 87%;
     flex-wrap: wrap;
     overflow-x:hidden;
-    /* justify-content: center; */
+    justify-content: center;
     align-items:center;
     margin:0 auto;
     font-family: 'Montserrat';
@@ -17,13 +17,11 @@
     flex-direction: column;
     color: #FF6060;
 }
-
 .infoBox {
     display:flex;
     flex-direction: row;
     width:100%;
 }
-
 .infoPart1 {
     display:flex;
     flex-direction: column;
@@ -66,7 +64,7 @@
     color: #FFFFFF;
     background: #FF6060;
     border-radius: 10px;
-    width: 25%;
+    width: 18%;
     justify-content:center;
     align-items:flex-end;
     height: 27px;
@@ -90,7 +88,7 @@
 .host {
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     font-size: 18px;
@@ -104,7 +102,6 @@
     line-height: 142.6%;
     flex-wrap:wrap;
     text-align: right;
-    padding-right:20px;
 }
 
 .hostPicture {
@@ -118,100 +115,13 @@
     display:flex;
 }
 
- .collapseContainer {
+.collapseContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .collapseComments {
-    display:flex;
     list-style-type: none;
-    padding:0; 
-    flex-direction: column;
-    font-size:18px;
-}
-
-@media screen and (max-width: 1000px) {
-    .sticker {
-        height:40px;
-        align-items:center;
-        text-align:center;
-    }
-}
-@media screen and (max-width: 800px) {
-    .appartTitle {
-        font-size: 25px;
-    }
-    .appartLocation {
-        font-size: 18px;
-    }
-    .sticker {
-        height:18px;
-        font-size:13px;
-    }
-    .infoBox {
-        flex-direction: column;
-    }
-    .infoPart1 {
-        width: 100%;
-    }
-    .infoPart2 {
-        width: 100%;
-        margin-bottom:20px;
-        justify-content:flex-start;
-    }
-    .infoPart2Details {
-        flex-direction: row;
-        justify-content:flex-start;
-        align-items:center;
-        overflow:hidden;
-        width:100%;
-    }
-    .host {
-        order:2;
-        justify-content:flex-end;
-    }
-    .hostName {
-        font-size: 15px;
-        width:50px;
-    }
-    .ratingContainer {
-        order:1;
-    }
-    .hostPicture {
-        width: 50px;
-        height: 50px;
-    } 
-    .collapseContainer {
-        height:111px;
-    }
-    .collapseContainer {
-        flex-direction: column;
-    }
-} 
-
-@media screen and (max-width: 520px) {
-    .sticker {
-        height:35px;
-    }
-}
-@media screen and (max-width: 428px) {
-    .appartTitle {
-        font-size: 18px;
-    }
-    .appartLocation {
-        font-size: 14px;
-    }
-    .sticker {
-        font-size:10px;
-    }
-    .hostName {
-        font-size: 12px;
-    }
-    .hostPicture {
-        width: 32px;
-        height: 32px;
-    }
-    
-
+    padding:0;
 }

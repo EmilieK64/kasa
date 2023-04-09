@@ -1,10 +1,12 @@
 import { useState } from "react";
 import chevronNext from '../../assets/images/chevron-next.png';
 import chevronPrevious from '../../assets/images/chevron-previous.png';
+import style from '../../utils/styles/slideshow.module.css';
+
 
 function Slideshow(pictures)
 {
-    console.log(pictures.pictures);
+    // console.log(pictures.pictures);
 
     const photos = pictures.pictures;
     // pour tester le cas où le logement n'a qu'une seule picture : id = 2139a317
@@ -23,14 +25,14 @@ function Slideshow(pictures)
     };
 
     return length > 1 ? (
-       <div className="carousel">
-            <img src={photos[index]} alt="piece du logement" />
-            <button onClick={handlePrevious}><img src={chevronPrevious} alt="chevron précédent"/></button>
-            <button onClick={handleNext}><img src={chevronNext} alt="chevron suivant"/></button>
+       <div className={style.carrousel}>
+            <img src={photos[index]} alt="piece du logement" className={style.image} />
+            <img src={chevronPrevious} alt="chevron précédent" className={style.chevronPrevious} onClick={handlePrevious}/>
+            <img src={chevronNext} className={style.chevronNext} onClick={handleNext}  alt="chevron suivant" />
       </div>
     ) : (
-        <div className="carousel">
-            <img src={photos[index]} alt="piece du logement" />
+        <div className={style.carrousel}>
+            <img src={photos[index]} alt="piece du logement" className={style.image}/>
       </div>
     )
 }

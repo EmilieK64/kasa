@@ -1,10 +1,16 @@
 import { useParams } from "react-router-dom";
 import logements from '../../utils/datas/logements.json';
 import Slideshow from '../../components/Slideshow';
+import Rating from "../../components/Rating";
 import Collapse from "../../components/Collapse";
 import style from '../../utils/styles/logement.module.css';
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+// import Error from "../../components/Error";
 
 function Logement() {
+
+    const navigate = useNavigate();
 
     // On récupère le paramètre id de l'URL
     const {id} = useParams();
@@ -13,39 +19,51 @@ function Logement() {
     const logement = logements.find((logement) => logement.id === id);
     // console.log(logement);
 
-    // Pour faciliter la visibilité et les traitements ci-dessous, on stocke les infos du logement dans des variables
-    const stickers = logement.tags;
-    // console.log(stickers);
-    const description = logement.description;
-    const equipments = logement.equipments;
-    // console.log(equipments);
-    const pictures = logement.pictures;
+    useEffect(() => {
+        if (logement === undefined) {
+            navigate('/*');
+        }
+    });
 
-    return (
-        <section>
+    // Pour faciliter la visibilité et les traitements ci-dessous, on stocke les infos du logement dans des variables
+    // TODO : commentaire à supprimer : Si logement exite, alors on stocke logement.tags dans stickers, sinon on stocke ''
+    const stickers = logement ? logement.tags : '';
+    // console.log(stickers);
+    const rating = logement ? logement.rating : '';
+    const description = logement ? logement.description : '';
+    const equipments = logement ? logement.equipments : '';
+    // console.log(equipments);
+    const pictures = logement ? logement.pictures : '';
+
+    return logement ? (
+        <section className={style.logementContainer}>
             <Slideshow pictures={pictures} />
-            <div>
-                <div>
-                    <h1>{logement.title}</h1>
-                    <h2>{logement.location}</h2>
-                    <div>
-                        <h4>{stickers.map((sticker, index) => (
-                            <li key={`${index}-${sticker}`}>{sticker}</li>
+            <div className={style.infoContainer}>
+                <div className={style.infoBox}>
+                    <div className={style.infoPart1}>
+                        <h1 className={style.appartTitle}>{logement.title}</h1>
+                        <h2 className={style.appartLocation}>{logement.location}</h2>
+                        <ul className={style.appartStickers}>{stickers.map((sticker, index) => (
+                            <li className={style.sticker} key={`${index}-${sticker}`}>{sticker}</li>
                             ))}
-                        </h4>
+                        </ul>
+                    </div>
+                    <div className={style.infoPart2}>
+                        <div className={style.infoPart2Details}>
+                            <div className={style.host}>
+                                <span className={style.hostName}>{logement.host.name}</span>
+                                <img src={logement.host.picture} alt="propriétaire" className={style.hostPicture}/>
+                            </div>
+                            <div className={style.ratingContainer}><Rating rating={rating} /></div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <span>{logement.host.name}</span>
-                    <img className={style.image} src={logement.host.picture} alt="propriétaire"/>
-                    <div>stars</div>
-                </div>
-                <div>
-                    <Collapse label='Description'>
-                        <p>{description}</p>
+                <div className={style.collapseContainer}>
+                    <Collapse className={style.collapseLabel} label='Description'>
+                        <p className={style.collapseComments}>{description}</p>
                     </Collapse>
                     <Collapse label='Equipements'>
-                        <ul>
+                        <ul className={style.collapseComments}>
                             {equipments.map((equipment, index) => (
                             <li key={index}>{equipment}</li>
                         ))}
@@ -54,7 +72,10 @@ function Logement() {
                 </div>
             </div>
         </section>
-    ) 
+    ) : (
+        <div>
+        </div>
+    )
 }
 
 export default Logement
