@@ -9,7 +9,6 @@
     position: relative;
     margin: auto;
 }
-
 .container_aboutPage {
     display:flex;
     width:100%;
@@ -21,7 +20,6 @@
     position: relative;
     margin: auto;
 }
-
 .image {
     display:flex;
     mix-blend-mode: darken;
@@ -36,8 +34,6 @@
     object-fit:cover; 
     border-radius:25px;
 }  
-
-
 .text {
     position: absolute;
     top: 35%; 
@@ -50,12 +46,13 @@
     font-size: 48px;
     width:705px;
 }
+
+
 @media screen and (max-width: 1450px) {
     .container {
         height: 223px;
     }
 }
-
 @media screen and (max-width: 900px) {
     .text {
         width:70%;
@@ -63,7 +60,6 @@
         font-size: 27px;
     }
 }
-
 @media screen and (max-width: 663px) {
     
     .container_aboutPage {
@@ -80,7 +76,6 @@
         font-size: 24px;
     }
 }
-
 @media screen and (max-width: 400px) {
     .container {
         height: 111px;
@@ -91,7 +86,6 @@
         left:42%;
     }
 }
-
 @media screen and (max-width: 360px) {
     .text {
         width:80%;

@@ -6,7 +6,6 @@ import Collapse from "../../components/Collapse";
 import style from '../../utils/styles/logement.module.css';
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-// import Error from "../../components/Error";
 
 function Logement() {
 
@@ -17,7 +16,6 @@ function Logement() {
 
     // On cherche si un logement correspond à l'id récupéré
     const logement = logements.find((logement) => logement.id === id);
-    // console.log(logement);
 
     useEffect(() => {
         if (logement === undefined) {
@@ -25,14 +23,10 @@ function Logement() {
         }
     });
 
-    // Pour faciliter la visibilité et les traitements ci-dessous, on stocke les infos du logement dans des variables
-    // TODO : commentaire à supprimer : Si logement exite, alors on stocke logement.tags dans stickers, sinon on stocke ''
     const stickers = logement ? logement.tags : '';
-    // console.log(stickers);
     const rating = logement ? logement.rating : '';
     const description = logement ? logement.description : '';
     const equipments = logement ? logement.equipments : '';
-    // console.log(equipments);
     const pictures = logement ? logement.pictures : '';
 
     return logement ? (

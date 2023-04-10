@@ -3,7 +3,6 @@ import greyStar from '../../assets/images/star-grey.png';
 import style from '../../utils/styles/rating.module.css';
 
 function Rating(rating) {
-    // console.log(rating.rating);
 
     // On récupère le nombre d'étoiles
     const evaluation = rating.rating;

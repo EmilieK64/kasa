@@ -6,21 +6,24 @@ import style from '../../utils/styles/slideshow.module.css';
 
 function Slideshow(pictures)
 {
-    // console.log(pictures.pictures);
-
     const photos = pictures.pictures;
     // pour tester le cas où le logement n'a qu'une seule picture : id = 2139a317
 
+    // Par défaut, on positionne le slideshow sur la première image de l'array photos
     const [index, setIndex] = useState(0); 
     const length = photos.length;
 
     const handlePrevious = () => {
     const newIndex = index - 1;
+    // On met à jour la valeur de l'index en prenant en compte le cas où on soit sur la première image de photos
+    // (dans ce cas, on repart sur la dernière)
     setIndex(newIndex < 0 ? length - 1 : newIndex);
     };
 
     const handleNext = () => {
     const newIndex = index + 1;
+    // On met à jour la valeur de l'index en prenant en compte le cas où on soit sur la dernière image de photos
+    // (dans ce cas, on repart sur la première)
     setIndex(newIndex >= length ? 0 : newIndex);
     };
 

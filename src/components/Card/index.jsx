@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import style from '../../utils/styles/card.module.css';
 import { Link } from 'react-router-dom';
 
@@ -12,11 +11,5 @@ function Card({ id, title, cover }) {
         </div>
     )
 }
-
-// On précise le type de chaque prop
-Card.propTypes = {
-    title: PropTypes.string.isRequired,
-    cover: PropTypes.string.isRequired
-};
 
 export default Card

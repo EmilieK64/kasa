@@ -10,16 +10,13 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
 .img {
     width: 150px;
 }
-
 .menuLinks {
     display: flex;
     color: #FF6060;
 }
-
 .links {
     text-decoration: none;
     color: #FF6060;
@@ -33,6 +30,7 @@
      text-decoration-line: underline;
 }
 
+
 @media screen and (max-width: 623px) {
     .links {
         font-size: 18px;
@@ -43,7 +41,6 @@
         width: 120px;
     }
 } 
-
 @media screen and (max-width: 450px) {
     .nav {
         margin-bottom: 0px;
@@ -57,13 +54,11 @@
         margin-left:10px;
     }
 } 
-
 @media screen and (max-width: 350px) {
     .links {
         font-size: 10px;
     }
 }
-
 @media screen and (max-width: 315px) {
     .img {
         width: 70px;
@@ -73,7 +68,6 @@
     }
     .links {
         font-size: 8px;
-        font-weight: 600;
-        
+        font-weight: 600;  
     }
 }

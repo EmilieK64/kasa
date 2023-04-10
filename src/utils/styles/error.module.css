@@ -12,7 +12,6 @@
     margin-top: 30px;
     text-align:center;
 }
-
 .errorNumber {
     font-weight: 700;
     font-style:bold;
@@ -24,7 +23,6 @@
     margin:0 auto;
     height: 345px;
 }
-    
 .errorText {
     font-weight: 500;
     font-size: 36px;
@@ -34,14 +32,12 @@
     align-items: flex-end;
     margin:0 auto;
 }
-
 .links {
     color: #FF6060;
     margin-top:130px;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-
 }
 @media screen and (max-width: 1129px) {
     .errorContainer {
@@ -82,7 +78,6 @@
     .errorContainer {
         margin-bottom:169px;
     } 
-    
     .errorNumber {
         font-size: 60px;
         

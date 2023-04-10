@@ -6,14 +6,12 @@
     font-family: 'Montserrat';
     width:100%;
 }
-
 .logo {
     position: absolute;
     top: 36%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 .copyright {
     position: absolute;
     top: 65%;
@@ -29,16 +27,6 @@
     text-align: center;
     color: #FFFFFF;
 }
-
-
-/* @media screen and (max-width: 1450px) {
-    .logo {
-        top: 36%;
-    }
-    .copyright {
-        top: 65%;
-    }
-} */
 
 
 @media screen and (max-width: 663px) {

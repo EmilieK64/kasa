@@ -9,7 +9,6 @@
     font-style: normal;
     justify-content: center;
 }
-
 .collapseBox_logement {
     display:flex;
     overflow:hidden;
@@ -22,7 +21,6 @@
     font-style: normal;
     justify-content: center;
 }
-
 .button_aboutPage {
     display:flex;
     position: relative;
@@ -111,18 +109,17 @@
     line-height: 142.6%;
 }
 
+
 @media screen and (max-width: 1500px) {
     .chevron_logement {
         left: 90%;
     }
 }
-
 @media screen and (max-width: 1163px) {
     .chevron_aboutPage {
         left: 90%;
     }
 }
-
 @media screen and (max-width: 800px) {
     .collapseBox_logement {
         padding-bottom: 15px; 
@@ -131,7 +128,6 @@
         left: 89%;
     }
 }
-
 @media screen and (max-width: 663px) {
     .button_aboutPage {
         font-size: 13px;
@@ -159,13 +155,11 @@
         font-size: 13px;
     }
 }
-
 @media screen and (max-width: 412px) {
     .paragraphBox_aboutPage {
         margin-right: 20px; 
     }
 }
-
 @media screen and (max-width: 300px) {
     .chevron_aboutPage {
         left: 80%;

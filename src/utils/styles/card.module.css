@@ -7,26 +7,22 @@
     margin-bottom:30px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-
 .card:hover {
     transform: scale(1.05);
     box-shadow: 4px 3px 8px #aaaaaa;
 }
-
 .links {
     display:flex;
     position: relative;
     width:100%; 
     border-radius: 10px;
 }
-
 .img {
     object-fit: cover;
     width: 100%;
     border-radius: 10px;
     opacity:0.7;
 }
-
 .cardTitle {
     position: absolute;
     font-family: 'Montserrat';
@@ -41,6 +37,7 @@
     line-height: 26px;
 }
 
+
 @media screen and (max-width: 1600px) {
     .card {
         height:340px;
@@ -49,14 +46,11 @@
         font-size: 18px;
     }
 }
-
-
 @media screen and (max-width: 1393px) {
     .cardTitle {
         top:69%;
     }
 }
-
 @media screen and (max-width: 1300px) {
     /* .card {
         height:290px;
@@ -72,7 +66,6 @@
         top: 65%;
     }
 }
-
 @media screen and (max-width: 1000px) {
     .card {
         width:45%;
@@ -81,7 +74,6 @@
         top: 70%;
     }
 }
-
 @media screen and (max-width: 752px) {
     .card {
         width:100%;
@@ -94,7 +86,6 @@
         top:77%;
     }
 }
-
 @media screen and (max-width: 500px) {
     .card {
         height:255px;
@@ -105,14 +96,12 @@
         top:67%;
     }
 }
-
 @media screen and (max-width: 363px) {
     .cardTitle {
         top: 60%;
         width:80%;
     }
 }
-
 @media screen and (max-width: 280px) {
     .cardTitle {
         width:90%;

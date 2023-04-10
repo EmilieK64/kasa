@@ -8,7 +8,6 @@
     align-items:center;
     margin:0 auto;
 }
-
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +33,6 @@
 }
  @media screen and (max-width: 450px) {
     .section {
-        padding-top:20px;
-        
+        padding-top:20px;  
     }
 } 

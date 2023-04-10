@@ -47,10 +47,11 @@
     .chevronPrevious { 
         width: 11.67px;
         height:19.8px;
+        top: 46%;
     }
-    
     .chevronNext {
         width: 11.67px;
         height:19.8px;
+        top: 46%;
     } 
 }
