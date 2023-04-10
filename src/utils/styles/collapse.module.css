@@ -17,7 +17,7 @@
     margin-top: 0;
     width: 103%;
     flex-direction: column;
-    padding-bottom: 28px;
+    padding-bottom: 15px;
     font-family: 'Montserrat';
     font-style: normal;
     justify-content: center;
@@ -107,11 +107,8 @@
     color:#FF6060;
     font-weight: 400;
     font-size: 18px;
-    width: 88%;
-    margin-bottom: 5px;
     margin-top: 15px;
     line-height: 142.6%;
-    width:90%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -127,15 +124,15 @@
 }
 
 @media screen and (max-width: 800px) {
+    .collapseBox_logement {
+        padding-bottom: 15px; 
+    }
     .chevron_logement {
         left: 89%;
     }
 }
 
 @media screen and (max-width: 663px) {
-    .collapseBox_logement {
-        padding-bottom:20px;
-    }
     .button_aboutPage {
         font-size: 13px;
         height:30px;

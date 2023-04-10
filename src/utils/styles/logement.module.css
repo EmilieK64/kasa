@@ -32,6 +32,7 @@
 .appartTitle {
     font-size: 36px;
     line-height: 25.67px;
+    margin-top:20px;
     margin-bottom: 0px;
     font-weight: 500;
     line-height: 142.6%;
@@ -54,6 +55,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 142.6%;
+    margin-top:10px;
 }
 
 .sticker {
@@ -104,7 +106,7 @@
     font-size: 18px;
     line-height: 142.6%;
     flex-wrap:wrap;
-    text-align: right;
+    text-align: flex-right;
     padding-right:20px;
 }
 
@@ -121,6 +123,7 @@
 
  .collapseContainer {
     display: flex;
+    width:102%;
 }
 .collapseComments {
     list-style-type: none;
@@ -184,19 +187,30 @@
     
     .collapseContainer {
         flex-direction: column;
+        margin-bottom:20px;
     }
 } 
 
 @media screen and (max-width: 663px) {
     .appartTitle {
-        margin-top:0px;
+        margin-top:7px;
+        margin-bottom:7px;
+    }
+    .appartStickers {
+        margin-top:20px;
     }
     .sticker {
         margin-top:0px;
         border-radius:5px;
     }
+    .collapseContainer {
+        margin-bottom:88px;
+    }
 }
 @media screen and (max-width: 450px) {
+    .collapseContainer {
+        margin-bottom:120px;
+    }
     .appartTitle {
         font-size: 18px;
     }
@@ -215,4 +229,23 @@
         width: 32px;
         height: 32px;
     }
+}
+@media screen and (max-width: 230px) {
+    .collapseContainer {
+        margin-bottom:59px;
+    }
+    .infoPart2Details {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .host {
+        flex-direction:column;
+        margin-top:10px;
+        align-items:flex-start;
+    }
+    .hostName {
+        align-items:flex-start;
+    }
+    
+
 }
