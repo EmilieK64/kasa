@@ -28,13 +28,13 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     top:77%;
     left: 5%;
     width: 70%;
     z-index:10;
-    line-height: 26px;
+    line-height: 142.6%;
 }
 
 
@@ -96,14 +96,26 @@
         top:67%;
     }
 }
+@media screen and (max-width: 400px) {
+    .cardTitle {
+        top:60%;
+    }
+}
+
 @media screen and (max-width: 363px) {
     .cardTitle {
-        top: 60%;
         width:80%;
     }
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 300px) {
     .cardTitle {
         width:90%;
+        font-size : 16px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .cardTitle {
+        width:90%;
+        font-size : 12px;
     }
 }

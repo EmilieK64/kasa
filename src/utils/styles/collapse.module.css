@@ -151,8 +151,17 @@
     .paragraphBox_aboutPage {
         font-size: 13px;
     }
+    .paragraphBoxOpened_logement {
+        display : flex;
+        background: #F7F7F7;
+        border-radius: 5px; 
+        width: 96%;
+        overflow:hidden;
+        flex-wrap:wrap;  
+    }
     .paragraphBox_logement {
         font-size: 13px;
+        padding-top:0;
     }
 }
 @media screen and (max-width: 412px) {
